@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:background="@color/purple_500"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/relativelay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/textviewvocabulary"
+    android:layout_centerVertical="true"
+    android:textStyle="bold"
+    android:textSize="22dp"
+    android:textColor="@color/white"
+    android:text="Vocabulary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+    <ImageView
+        android:id="@+id/imageviewvocabularyadd"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:src="@drawable/baseline_add_24"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="38dp"
+        android:layout_height="38dp"></ImageView>
+</RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edittextsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
